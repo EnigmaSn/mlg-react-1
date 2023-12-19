@@ -7,7 +7,11 @@ function Component({ component }) {
         <ul className="item__options">
           {component.options.map((item) => {
             return (
-              <li key={item.id} item={item} className="item__option">
+              <li
+                key={crypto.randomUUID()}
+                item={item}
+                className="item__option"
+              >
                 {item}
               </li>
             );
