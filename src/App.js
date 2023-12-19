@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.scss";
+import "./components/components.scss";
+import Component from "./components/component";
+import data from "./data";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <h1 className="app__title">Тестовое задание 1</h1>
+      <section className="components">
+        <h2 className="components__title">Список компонентов</h2>
+        {data.map((item) => {
+          return <Component key={crypto.randomUUID()} component={item} />;
+        })}
+      </section>
     </div>
   );
 }
