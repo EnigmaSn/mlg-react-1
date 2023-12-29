@@ -2,13 +2,13 @@
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 5px;
   padding: 10px;
-  transition: all 2s ease-out 5ms;
+  transition: all 0.5s ease-out 5ms;
   flex: 1 1 auto;
   margin: 5px;
 
   &:hover {
     background-color: rgba(240, 240, 240, 0.5);
-    transition: all 2s ease-out 5ms;
+    transition: all 0.5s ease-out 5ms;
   }
 
   &__title {
